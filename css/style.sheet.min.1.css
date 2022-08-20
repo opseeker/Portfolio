@@ -1,0 +1,73 @@
+@import url(./animate.css);
+
+@import url(./color.pallete.css);
+
+
+.v-hide {
+    display: none;
+}
+
+.bg-dark div {
+    color: #fff
+}
+
+.spinner {
+    content: " ";
+    border: #fff solid 4px;
+    position: absolute;
+    top: 5em;
+    left: 10rem;
+}
+
+::-webkit-scrollbar {display: none;}
+
+[nav-n0] {
+    background: #000
+}
+
+.lang-list-items .lang-list-link {
+    list-style: none;
+    font-size: 1em;
+}
+
+.lang-list-items .lang-list-link a {
+    text-decoration: none;
+    color: rgb(0, 134, 0)
+}
+
+.image-p1 {
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 300;
+    font-size: 1em;
+}
+
+[profileImage1] {
+    width: 200px;
+}
+
+.bg-profile {
+    background: url(../bag_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw; height: auto;
+    aspect-ratio: 16/9;
+    z-index: -1;
+    /* filter: brightness(1) grayscale(0) blur(0) contrast(1) saturate(2) hue-rotate(0deg); */
+    filter: brightness(.5) contrast(1.5);
+    position: absolute;
+    top: 28px;
+    transition: filter 4s;
+}
+
+[bPic] {
+    --size: 200px;
+    width: var(var(--size)); height: var(--size);
+    background: url(../dp_whatsapp.png);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    transition: filter 2s, border 4s;
+    filter: brightness(.8) contrast(.8);
+    border: 5px solid;
+    border-color: var(--white);
+}

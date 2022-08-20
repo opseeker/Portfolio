@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- 
+    THIS IS A PORTFOLIO FOR MYSELF AND CONTAINS HTML CSS AND JAVASCRIPT TAGS
+    AND ELEMENTS WITHIN. THE WHOLE SOURCE CODE WILL BE AVAILABLE AT GITHUB AND 
+    ANYONE CAN USE THE SOURCE CODES FOR REFERENCE TO BUILD THEIR OWN PORTFOLIO.
+
+    NOTE: THE PERSONAL DETAILS LIKE NAME, AGE, GENDER,... AND OTHER DETAILS AND INFORMATION 
+    WILL BE NOT SEEN HERE DIRECTLY AND MAY NOT WORK UNTIL YOU USE THE REQUIRED JAVASCRIPT CODE.
+    A FEW OF THE PAGE'S CONTENTS ARE DYNAMICALLY ADDED USING JS, HENCE SIMPLY COPYING THIS PARTICULAR 
+    DOCUMENT WON'T BE OF ANY HELP. 
+
+    I WOULD STILL LOVE TO LET ASPIRING NEW DEVELOPERS TO LEARN AND EXPLORE NEW THINGS SO I WILL BE LEAVING COMMENTS AT THE 
+    CRITICAL POINTS THROUGHOUT THE WHOLE DOCUMENT IF POSSIBLE.
+
+    DO NOT FORGET TO GIVE A THANKS :)
+    -ANKIT SAIKIA
+
+    FEATURED USE OF 
+    * FULLSCREEN API
+    * CSS ANIMATIONS | KEYFRAMES
+    * JavaScript
+ -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>A Simple Portfolio of Ankit Saikia</title>
+    <meta name="description" content="A glimpse of Portfolio from Ankit Saikia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#000">
+    <!-- REQUIRES ICON -->
+    
+    <link rel="stylesheet" href="./css/style.sheet.min.1.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <style>
+        html {
+            user-select: none !important;
+        }
+    </style>
+</head>
+
+<!-- ADD BG-DARK FOR DARK THEME and BG-BLACK FOR EXTREME DARK/ absolute dark theme -->
+<body class="bg-black">
+    <!-- MAIN CONTENT START -->
+    <!-- NAVBAR START -->
+    <div class="w-100 pt-1 m-0" nav-n0>
+            <ul class="lang-list-items d-flex flex-row px-2 py-0 my-0 overflow-scroll fw-bold">
+                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">C</a></li>
+                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">C++</a></li>
+                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">Java</a></li>
+                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">HTML</a></li>
+                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">CSS</a></li>
+                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">JS</a></li>
+                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">React</a></li>
+                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">Android</a></li>
+                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">C#</a></li>
+                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">Python</a></li>
+                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">PHP</a></li>
+            </ul>
+        </div>
+        <nav class="nav navbar">
+            <div class="m-0 p-0">
+            </div>
+        </nav>
+        <!-- NAVBAR END -->
+        
+        <div class="main-content">
+        <!-- About myself start -->
+        <section class="info-about">
+            <div class="container">
+                <div class="row">
+                    <div class="bg-profile animate"></div>
+                    <div class="container px-5 mt-5">
+                        <div class="image-p1 px-5 mt-5">
+                            <!-------------------- PROFILE IMAGE METHOD-1: IMG | METHOD-2: CSS BACKGROUND-IMG ------------------------>
+                            <!-- <img src="./dp_whatsapp.png" alt="my profile image" class="img-fluid rounded-circle shadow-lg animate spin-border" loading="lazy" profileImage1> -->
+                            <div class="rounded-circle shadow-lg" loading="lazy" bPic></div>
+                        </div>
+                        <!-- <img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"> -->
+                    </div>
+                </div>
+            </div>
+            <div class="intro-content display-table">
+                <div class="table-cell">
+                  <div class="container text-center">
+                    <!--<p class="display-6 color-d">Hello, world!</p>-->
+                    <h1 class="intro-title mb-4 text-light">I am Ankit Saikia</h1>
+                    <p class="intro-subtitle"><span class="text-slider-items visually-hidden">Web Developer,Web Designer,Frontend Developer,UI - UX Designer,video editor,graphics designer,software developer</span><strong class="text-slider text-capitalize fw-light fs-1" style="color: var(--green-1)"></strong></p>
+                    <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- About myself end -->
+
+        <!-- hobbies start -->
+        <div class="hobbies-sec visually-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card col-md-1">
+                            <span class="text-uppercase text-center">manga</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- MAIN CONTENT END -->
+
+    <script src="./js/fullscreen/api.lvl.1.js" defer></script>
+    <script src="./js/fullscreen/script.v1.js" defer></script>
+
+    <script src="./js/jquery/jquery.min.js"></script>
+    <script src="./js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/counterup/jquery.waypoints.min.js"></script>
+    <script src="./js/counterup/jquery.counterup.js"></script>
+    <script src="./js/typed/typed.min.js"></script>
+    <script src="./js/typed.js"></script>
+</body>
+
+</html>
