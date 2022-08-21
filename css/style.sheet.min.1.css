@@ -46,28 +46,82 @@
     width: 200px;
 }
 
+@media (min-width: 400px) {
+    .bg-profile {
+        width: 100px;
+    }
+}
+
 .bg-profile {
     background: url(../bag_1.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    width: 100vw; height: auto;
+    width: 100%; height: auto;
     aspect-ratio: 16/9;
     z-index: -1;
     /* filter: brightness(1) grayscale(0) blur(0) contrast(1) saturate(2) hue-rotate(0deg); */
     filter: brightness(.5) contrast(1.5);
     position: absolute;
-    top: 28px;
+    top: 28px; left:0;
     transition: filter 4s;
 }
 
 [bPic] {
     --size: 200px;
-    width: var(var(--size)); height: var(--size);
-    background: url(../dp_whatsapp.png);
+    width: var(--size); height: var(--size);
+    background: url(../wi1.jpg);
     background-repeat:  no-repeat;
     background-size: cover;
+    aspect-ratio: 1/1;
     transition: filter 2s, border 4s;
-    filter: brightness(.8) contrast(.8);
+    filter: brightness(1.2) contrast(.7) saturate(1.2);
     border: 5px solid;
-    border-color: var(--white);
+    border-color: #04a31f;
 }
+
+#info_about {
+    height: 85vh;
+}
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .about-mf .about-img {
+    margin-bottom: 2rem;
+  }
+  
+  .about-mf .about-img img {
+    margin-left: 10px;
+  }
+  
+  .skill-mf span {
+    color: #4e4e4e;
+  }
+  
+  .skill-mf .progress {
+    background-color: #cecbcb;
+    margin: .5rem 0 1.2rem 0;
+    border-radius: 0;
+    height: .7rem;
+  }
+  
+  .skill-mf .progress .progress-bar {
+    height: .7rem;
+    background-color: #08af56;
+  }
+
+  .title-s {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .about-img {
+   width: 200px;
+  }

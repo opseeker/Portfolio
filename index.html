@@ -30,50 +30,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="theme-color" content="#000">
     <!-- REQUIRES ICON -->
-    
+
     <link rel="stylesheet" href="./css/style.sheet.min.1.css">
     <link rel="stylesheet" href="./css/main.css">
 
     <style>
+
         html {
             user-select: none !important;
+            -webkit-user-select: none !important;
+        }
+
+        /* Preloader */
+
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999;
+            overflow: hidden;
+            background: #000;
+        }
+
+        #preloader:before {
+            content: "";
+            position: fixed;
+            top: calc(50% - 30px);
+            left: calc(50% - 30px);
+            border: 6px solid #000000;
+            border-top: 6px solid #00a548;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            -webkit-animation: animate-preloader 1s linear infinite;
+            animation: animate-preloader 1s linear infinite;
+        }
+
+        @-webkit-keyframes animate-preloader {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes animate-preloader {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
 
 <!-- ADD BG-DARK FOR DARK THEME and BG-BLACK FOR EXTREME DARK/ absolute dark theme -->
+
 <body class="bg-black">
     <!-- MAIN CONTENT START -->
     <!-- NAVBAR START -->
     <div class="w-100 pt-1 m-0" nav-n0>
-            <ul class="lang-list-items d-flex flex-row px-2 py-0 my-0 overflow-scroll fw-bold">
-                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">C</a></li>
-                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">C++</a></li>
-                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">Java</a></li>
-                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">HTML</a></li>
-                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">CSS</a></li>
-                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">JS</a></li>
-                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">React</a></li>
-                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">Android</a></li>
-                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">C#</a></li>
-                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">Python</a></li>
-                <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">PHP</a></li>
-            </ul>
+        <ul class="lang-list-items d-flex flex-row px-2 py-0 my-0 overflow-scroll fw-bold">
+            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">C</a></li>
+            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">C++</a></li>
+            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">Java</a></li>
+            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">HTML</a></li>
+            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">CSS</a></li>
+            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">JS</a></li>
+            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">React</a></li>
+            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">Android</a></li>
+            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">C#</a></li>
+            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">Python</a></li>
+            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">PHP</a></li>
+        </ul>
+    </div>
+    <nav class="nav navbar">
+        <div class="m-0 p-0">
         </div>
-        <nav class="nav navbar">
-            <div class="m-0 p-0">
-            </div>
-        </nav>
-        <!-- NAVBAR END -->
-        
-        <div class="main-content">
+    </nav>
+    <!-- NAVBAR END -->
+
+    <div class="main-content">
         <!-- About myself start -->
-        <section class="info-about">
+        <section class="info-about" id="info_about">
             <div class="container">
-                <div class="row">
+                <div class="row d-grid justify-content-center">
                     <div class="bg-profile animate"></div>
-                    <div class="container px-5 mt-5">
-                        <div class="image-p1 px-5 mt-5">
+                    <div class="container mt-5">
+                        <div class="image-p1 mt-5">
                             <!-------------------- PROFILE IMAGE METHOD-1: IMG | METHOD-2: CSS BACKGROUND-IMG ------------------------>
                             <!-- <img src="./dp_whatsapp.png" alt="my profile image" class="img-fluid rounded-circle shadow-lg animate spin-border" loading="lazy" profileImage1> -->
                             <div class="rounded-circle shadow-lg" loading="lazy" bPic></div>
@@ -82,34 +136,112 @@
                     </div>
                 </div>
             </div>
-            <div class="intro-content display-table">
+            <div class="intro-content display-table mt-4">
                 <div class="table-cell">
-                  <div class="container text-center">
-                    <!--<p class="display-6 color-d">Hello, world!</p>-->
-                    <h1 class="intro-title mb-4 text-light">I am Ankit Saikia</h1>
-                    <p class="intro-subtitle"><span class="text-slider-items visually-hidden">Web Developer,Web Designer,Frontend Developer,UI - UX Designer,video editor,graphics designer,software developer</span><strong class="text-slider text-capitalize fw-light fs-1" style="color: var(--green-1)"></strong></p>
-                    <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-                  </div>
-                </div>
-              </div>
-        </section>
-        <!-- About myself end -->
-
-        <!-- hobbies start -->
-        <div class="hobbies-sec visually-hidden">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="card col-md-1">
-                            <span class="text-uppercase text-center">manga</span>
-                        </div>
+                    <div class="container text-center">
+                        <h1 class="intro-title mb-4 text-light">I am Ankit Saikia</h1>
+                        <p class="intro-subtitle"><span class="text-slider-items visually-hidden">Web Developer,Web Designer,Frontend Developer,UI - UX Designer,Video Editor,Graphics Designer,Software Developer,Blogger,YouTuber,Social Code Influencer,Digital Artist</span><strong class="text-slider fw-light fs-1" style="color: var(--green-1)"></strong></p>
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </section>
+        <!-- About myself end -->
+
+        <!-- about start -->
+        <section id="about" class="about-mf sect-pt4 route mt-5 bg-white">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="box-shadow-full">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="row">
+                          <div class="col-sm-6 col-md-5">
+                            <div class="about-img animate bounce">
+                              <img src="./wi1.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-7 my-5">
+                            <div class="about-info p-2 shadow-lg">
+                              <p><span class="title-s">Name: </span> <span>Ankit Saikia</span></p>
+                              <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
+                              <p><span class="title-s">Email: </span> <span>ankitsaikia19@gmail.com</span></p>
+                              <p><span class="title-s">Phone: </span> <span>(91) 882 2494 773</span></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="skill-mf">
+                          <p class="title-s">Skill</p>
+                          <span>HTML</span> <span class="pull-right">80%</span>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                              aria-valuemax="100"></div>
+                          </div>
+                          <span>CSS</span> <span class="pull-right">90%</span>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                              aria-valuemax="100"></div>
+                          </div>
+                          <span>PHP</span> <span class="pull-right">0%</span>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                              aria-valuemax="100"></div>
+                          </div>
+                          <span>JAVASCRIPT</span> <span class="pull-right">40%</span>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                              aria-valuemax="100"></div>
+                          </div>
+                          <span>C</span> <span class="pull-right">30%</span>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+                              aria-valuemax="100"></div>
+                          </div>
+                          <span>C++</span> <span class="pull-right">40%</span>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                              aria-valuemax="100"></div>
+                          </div>
+                          <span>React</span> <span class="pull-right">40%</span>
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                              aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 shadow">
+                        <div class="about-me pt-4 pt-md-0">
+                          <div class="title-box-2">
+                            <h5 class="title-left">
+                              About me
+                            </h5>
+                          </div>
+                          <p class="lead">
+                            I am still learning all sorts of languages and developing my programmer skills. There is a long way to go,
+                            learning new things from my day to day life, I feel the changes taking place within.
+                          </p>
+                          <p class="lead">
+                            I have graduated from many prestigious institutions and have accumulated many years of experience as a computer programmer.
+                            I did not have the chance to learn things from an early age hance not growing exponentially fast compared to other programmers.
+                            But as they say, you can achieve your dreams by working hard and being diligent.
+                          </p>
+                          <p class="lead">
+                            I can at least provide you with a good decent webpage and web services. Contact me if you feel like hiring me.
+                            There are details on my work done till date. I specially like the work related to web development.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
     </div>
     <!-- MAIN CONTENT END -->
+
+    <div id="preloader"></div>
 
     <script src="./js/fullscreen/api.lvl.1.js" defer></script>
     <script src="./js/fullscreen/script.v1.js" defer></script>
