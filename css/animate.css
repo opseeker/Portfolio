@@ -228,3 +228,29 @@
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
   }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+  }
+
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+
+  @keyframes fadeOut {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+  }
