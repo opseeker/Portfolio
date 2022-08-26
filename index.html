@@ -1,40 +1,29 @@
 <!DOCTYPE html>
-<!-- 
-    THIS IS A PORTFOLIO FOR MYSELF AND CONTAINS HTML CSS AND JAVASCRIPT TAGS
-    AND ELEMENTS WITHIN. THE WHOLE SOURCE CODE WILL BE AVAILABLE AT GITHUB AND 
-    ANYONE CAN USE THE SOURCE CODES FOR REFERENCE TO BUILD THEIR OWN PORTFOLIO.
 
-    NOTE: THE PERSONAL DETAILS LIKE NAME, AGE, GENDER,... AND OTHER DETAILS AND INFORMATION 
-    WILL BE NOT SEEN HERE DIRECTLY AND MAY NOT WORK UNTIL YOU USE THE REQUIRED JAVASCRIPT CODE.
-    A FEW OF THE PAGE'S CONTENTS ARE DYNAMICALLY ADDED USING JS, HENCE SIMPLY COPYING THIS PARTICULAR 
-    DOCUMENT WON'T BE OF ANY HELP. 
-
-    I WOULD STILL LOVE TO LET ASPIRING NEW DEVELOPERS TO LEARN AND EXPLORE NEW THINGS SO I WILL BE LEAVING COMMENTS AT THE 
-    CRITICAL POINTS THROUGHOUT THE WHOLE DOCUMENT IF POSSIBLE.
-
-    DO NOT FORGET TO GIVE A THANKS :)
-    -ANKIT SAIKIA
-
-    FEATURED USE OF 
-    * FULLSCREEN API
-    * CSS ANIMATIONS | KEYFRAMES
-    * JavaScript
- -->
 <html lang="en">
 
 <head>
+  
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>A Simple Portfolio of Ankit Saikia</title>
-    <meta name="description" content="A glimpse of Portfolio from Ankit Saikia" />
+    <title>A Simple Portfolio of Ankit Saikia - 2022</title>
+    <meta name="description" content="Portfolio of Ankit Saikia | A portfolio page written by Ankit Saikia." />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="theme-color" content="#000">
+    <meta name="theme-color" content="#000" />
     <!-- REQUIRES ICON -->
 
+    <!-- Bootstrap Css -->
     <link rel="stylesheet" href="./bootstrap-5.2.0-dist/css/bootstrap.min.css">
+
+    <!-- Icons Css -->
     <link rel="stylesheet" href="./css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/ionicons/css/ionicons.min.css">
+
+    <!-- Custom Css -->
     <link rel="stylesheet" href="./css/style.sheet.min.1.css">
+
+    <!-- Animations Css -->
+    <link rel="stylesheet" href="./css/magic-master/dist/magic.min.css">
     <link rel="stylesheet" href="./css/animate.git.css">
 
     <style>
@@ -97,12 +86,28 @@
             }
         }
     </style>
+
 </head>
 
 <!-- ADD BG-DARK FOR DARK THEME and BG-BLACK FOR EXTREME DARK/ absolute dark theme -->
 
 <body class="bg-black" id="page-top">
-    <!-- MAIN CONTENT START -->
+  <!-- MAIN CONTENT START -->
+  <div class="w-100 pt-1 m-0" nav-n0>
+      <ul class="lang-list-items d-flex flex-row px-2 py-0 my-0 overflow-scroll fw-bold">
+          <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">C</a></li>
+          <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">C++</a></li>
+          <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">Java</a></li>
+          <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">HTML</a></li>
+          <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">CSS</a></li>
+          <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">JS</a></li>
+          <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">React</a></li>
+          <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">Android</a></li>
+          <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">C#</a></li>
+          <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">Python</a></li>
+          <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">PHP</a></li>
+      </ul>
+  </div>
     <!--/ Nav Star /-->
  <nav class="navbar navbar-b navbar-expand-md fixed-top visually-hidden animate__animated animate__fast" id="mainNav">
    <div class="container">
@@ -138,23 +143,6 @@
    </div>
  </nav>
  <!--/ Nav End /-->
-    <!-- NAVBAR START -->
-    <div class="w-100 pt-1 m-0" nav-n0>
-        <ul class="lang-list-items d-flex flex-row px-2 py-0 my-0 overflow-scroll fw-bold">
-            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">C</a></li>
-            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">C++</a></li>
-            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">Java</a></li>
-            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">HTML</a></li>
-            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">CSS</a></li>
-            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">JS</a></li>
-            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">React</a></li>
-            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">Android</a></li>
-            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">C#</a></li>
-            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">Python</a></li>
-            <li class="lang-list-link text-center text-uppercase px-1 mx-2"><a href="">PHP</a></li>
-        </ul>
-    </div>
-    <!-- NAVBAR END -->
 
     <div class="main-content">
         <!-- About myself start -->
@@ -165,10 +153,8 @@
                     <div class="container mt-5">
                         <div class="image-p1 mt-5">
                             <!-------------------- PROFILE IMAGE METHOD-1: IMG | METHOD-2: CSS BACKGROUND-IMG ------------------------>
-                            <!-- <img src="./dp_whatsapp.png" alt="my profile image" class="img-fluid rounded-circle shadow-lg animate spin-border" loading="lazy" profileImage1> -->
                             <div class="rounded-circle shadow-lg" loading="lazy" bPic></div>
                         </div>
-                        <!-- <img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"> -->
                     </div>
                 </div>
             </div>
